@@ -5,9 +5,11 @@ This is a skeleton project for getting object-oriented selenium up and running
 
 ### Prerequisites
 
-Java 11
-Gradle
-Gradle wrapper (optional)
+- Java 11
+
+- Gradle
+
+- Gradle wrapper (optional)
 
 ```
 gradle wrapper
