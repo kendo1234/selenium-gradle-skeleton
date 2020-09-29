@@ -1,18 +1,16 @@
 package googletesting.basictests;
 
-import googletesting.components.Home;
-import googletesting.components.SearchResults;
+import googletesting.components.AmazonSearch;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-
-public class FeelingLuckyTest {
+public class AmazonSearchTest {
 
   private WebDriver driver;
 
@@ -34,11 +32,10 @@ public class FeelingLuckyTest {
   }
 
   @Test
-  public void feelingLucky() {
-    Home home = new Home(driver);
-    SearchResults searchResults = new SearchResults(driver);
-
-    home.feelingLucky();
-    searchResults.luckyResultsAreReturned();
+  public void searchForBooks() {
+    AmazonSearch amazonSearch = new AmazonSearch(driver);
+    amazonSearch.searchForBooks();
   }
+
 }
+
