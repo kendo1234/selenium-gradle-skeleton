@@ -1,4 +1,4 @@
-package googletesting.driver;
+package base.driver;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;

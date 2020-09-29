@@ -1,6 +1,6 @@
-package googletesting.components;
+package amazontesting.components;
 
-import googletesting.driver.DriverFactory;
+import base.driver.DriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

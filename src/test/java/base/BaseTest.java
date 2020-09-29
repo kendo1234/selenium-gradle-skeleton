@@ -1,18 +1,15 @@
-package googletesting.basictests;
+package base;
 
-import googletesting.components.AmazonSearch;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+public class BaseTest {
 
-public class AmazonSearchTest {
-
-  private WebDriver driver;
+  protected WebDriver driver;
 
   @BeforeAll
   public static void setupClass() {
@@ -31,11 +28,4 @@ public class AmazonSearchTest {
     }
   }
 
-  @Test
-  public void searchForBooks() {
-    AmazonSearch amazonSearch = new AmazonSearch(driver);
-    amazonSearch.searchForBooks();
-  }
-
 }
-
