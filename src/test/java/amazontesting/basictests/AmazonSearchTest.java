@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 public class AmazonSearchTest extends BaseTest {
 
   @Test
-  public void searchForBooks() {
+  public void performCategorySearch() {
     AmazonSearch amazonSearch = new AmazonSearch(driver);
     amazonSearch.searchForBooks();
   }
