@@ -6,6 +6,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class BaseTest {
 
@@ -18,8 +19,10 @@ public class BaseTest {
 
   @BeforeEach
   public void setupTest() {
-    driver = new ChromeDriver();
-  }
+    ChromeOptions options = new ChromeOptions();
+    options.addArguments("--headless");
+    options.addArguments("--disable-gpu");
+    driver = new ChromeDriver(options);  }
 
   @AfterEach
   public void teardown() {
